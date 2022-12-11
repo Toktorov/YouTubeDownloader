@@ -1,0 +1,6 @@
+asgiref==3.5.2
+backports.zoneinfo==0.2.1
+Django==4.1.4
+Pillow==9.3.0
+sqlparse==0.4.3
+youtube-dl==2021.12.17
