@@ -124,8 +124,8 @@ STATICFILES_DIRS = [BASE_DIR/'static']
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'cryxxenclub@gmail.com'
-EMAIL_HOST_PASSWORD = 'twdgstawmnxzspia'
+EMAIL_HOST_USER = 'kurmanbektoktorov23@gmail.com'
+EMAIL_HOST_PASSWORD = 'fbxkbdmdqmwrcszt'
 
 # Celery settings
 CELERY_BROKER_URL = "redis://localhost:6379"

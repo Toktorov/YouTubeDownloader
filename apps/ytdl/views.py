@@ -1,10 +1,5 @@
-from django.shortcuts import render, redirect
-from django.core.mail import send_mail
-from youtube_dl import YoutubeDL
-from django.core.mail import EmailMessage
-from django.conf import settings
+from django.shortcuts import render
 from django.views.generic.edit import FormView
-from django.views.generic.base import TemplateView
 from apps.ytdl.forms import MailForm
 
 # Create your views here.
