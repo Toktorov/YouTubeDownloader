@@ -7,9 +7,8 @@ class MailSerializer(serializers.Serializer):
     )
     email = serializers.EmailField(label="Email Address")
 
-    def create(self, validated_data):
-        send_feedback_email_task.apply_async(args=[
-            self.initial_data["url"], self.initial_data["email"]
-            ]
+    def send_email(self):
+        send_feedback_email_task.delay(
+            self.initial_data['url'],
+            self.initial_data['email']
         )
-        return True
