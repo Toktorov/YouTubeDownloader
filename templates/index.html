@@ -11,16 +11,7 @@
                 <h3 class="thin-heading mb-4">КОНВЕРТИРУЙТЕ ВИДЕО С YOUTUBE В MP3 И РАЗЛИЧНЫЕ ДРУГИЕ ФОРМАТЫ</h3>
                 <form class="mb-5" method="post" id="contactForm" name="contactForm">
                     {% csrf_token %}
-                    <div class="row">
-                        <div class="col-md-12 form-group">
-                            <textarea class="form-control" name="url" id="message" cols="30" rows="2" placeholder="Вставьте ссылку сюда.. например. https://www.youtube.com/watch?v=e-OfSWE9uV4"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 form-group">
-                            <input type="text" class="form-control" name="email" id="email" placeholder="Почта">
-                        </div>
-                    </div>
+                    {{ form.as_p }}
                   
                   <div class="row">
                     <div class="col-12">
